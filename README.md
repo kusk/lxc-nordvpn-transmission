@@ -1,4 +1,4 @@
-# Setting up af LXC container with NordVPN, Killswitch Firewall and Transmission
+# Setting up a LXC container with NordVPN, Killswitch Firewall and Transmission
 Baseline is that you know how to create a LXC container with privileged settings. So create such a thing first. I used 1 CPU, 1GB RAM and 2GB Disk.
 
 In this example "alpine-3.16-default_20220622_amd64.tar.xz" was used.
