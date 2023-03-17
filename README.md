@@ -4,7 +4,7 @@ Baseline is that you know how to create a LXC container with privileged settings
 In this example "alpine-3.16-default_20220622_amd64.tar.xz" was used.
 
 ## Optional: Setup mounted share
-If you want to download files to a mount SMB share you need to do the following:
+If you want to download files to a mounted SMB share you need to do the following:
 ~~~
 apk add cifs-utils
 mkdir /torrents
