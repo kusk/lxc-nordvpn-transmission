@@ -114,6 +114,13 @@ And remember to change "/var/lib/transmission/config/settings.json" to reflect y
 "rpc-whitelist": "192.168.1.*,127.0.0.1,::1",
 ~~~
 
+Now enable the firewall with:
+~~~
+ufw enable
+~~~
+
+And then reboot your container.
+
 After that you should be good to go with your new seedbox.
 
 ## Links
