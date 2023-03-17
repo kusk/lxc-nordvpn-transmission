@@ -12,7 +12,7 @@ mkdir /torrents
 
 Add the following to "/etc/fstab". Customize for your environment.
 ```
-//192.168.178.30/torrents    /torrents    cifs    uid=0,gid=0,user=janhapke,password=*****,_netdev 0 0
+//192.168.178.30/torrents    /torrents    cifs    uid=0,gid=0,user=myusername,password=*****,_netdev 0 0
 ```
 In my case enabling netmount didn't ensure that the share was automounted, so I created a custom starter script.
 
