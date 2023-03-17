@@ -1,6 +1,8 @@
 # Setting up a LXC container with NordVPN, Killswitch Firewall and Transmission
 Baseline is that you know how to create a LXC container with privileged settings. So create such a thing first. I used 1 CPU, 1GB RAM and 2GB Disk.
 
+Also this setup is not for use in anything else than a private LAN. Additional security should be added if it is ran in a public LAN.
+
 In this example "alpine-3.16-default_20220622_amd64.tar.xz" was used.
 
 ## Optional: Setup mounted share
@@ -127,6 +129,9 @@ After that you should be good to go with your new seedbox.
 
 ## Links
 https://janhapke.com/blog/mount-cifs-samba-fstab-alpine-linux/
+
 https://www.comparitech.com/blog/vpn-privacy/how-to-make-a-vpn-kill-switch-in-linux-with-ufw/
+
 https://forum.proxmox.com/threads/pve-7-openvpn-lxc-problem-cannot-open-tun-tap-dev.103081/
+
 https://wiki.alpinelinux.org/wiki/Setting_up_Transmission_(bittorrent)_with_Clutch_WebUI
