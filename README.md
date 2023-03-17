@@ -65,8 +65,8 @@ Download the one you want or all of them and place them in "/etc/openvpn". Name 
 
 The firewall rules to allow LAN and disable everything to WAN except to the VPN-ip(156.67.85.16) on port 1194(udp):
 ~~~
-ufw allow in to **192.168.1.0/24**
-ufw allow out to **192.168.1.0/24**
+ufw allow in to 192.168.1.0/24
+ufw allow out to 192.168.1.0/24
 ufw default deny outgoing
 ufw default deny incoming
 ufw allow out to 156.67.85.16 port 1194 proto udp
