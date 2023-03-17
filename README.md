@@ -128,10 +128,7 @@ And then reboot your container.
 After that you should be good to go with your new seedbox.
 
 ## Links
-https://janhapke.com/blog/mount-cifs-samba-fstab-alpine-linux/
-
-https://www.comparitech.com/blog/vpn-privacy/how-to-make-a-vpn-kill-switch-in-linux-with-ufw/
-
-https://forum.proxmox.com/threads/pve-7-openvpn-lxc-problem-cannot-open-tun-tap-dev.103081/
-
-https://wiki.alpinelinux.org/wiki/Setting_up_Transmission_(bittorrent)_with_Clutch_WebUI
+- https://janhapke.com/blog/mount-cifs-samba-fstab-alpine-linux/
+- https://www.comparitech.com/blog/vpn-privacy/how-to-make-a-vpn-kill-switch-in-linux-with-ufw/
+- https://forum.proxmox.com/threads/pve-7-openvpn-lxc-problem-cannot-open-tun-tap-dev.103081/
+- https://wiki.alpinelinux.org/wiki/Setting_up_Transmission_(bittorrent)_with_Clutch_WebUI
