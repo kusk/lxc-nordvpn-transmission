@@ -58,7 +58,9 @@ In order to setup a VPN kill switch in UFW, you need three pieces of information
 -   The **public IP address** of the VPN server you connect to
 -   The **port and protocol** your server uses to communicate
 -   The **subnet** of your local network
+
 You can download NordVPN config files from: https://nordvpn.com/da/ovpn/
+
 Download the one you want or all of them and place them in "/etc/openvpn". Name the one you want to use and place it at "/etc/openvpn/nordvpn.ovpn"
 
 The firewall rules to allow LAN and disable everything to WAN except to the VPN-ip(156.67.85.16) on port 1194(udp):
