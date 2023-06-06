@@ -98,6 +98,11 @@ Install Transmission-daemon as bittorrent client:
 apk add transmission-daemon
 ~~~
 
+Make sure Transmission-daemon autostarts:
+~~~
+rc-update add transmission-daemon default
+~~~
+
 If you are using a SMB mounted share, you might run into permissions problems as Transmission-daemon is running as the user "transmission". You can fix this multiple ways, but the quick-fix way was to change the permissions of the daemon in the file "/etc/runlevels/default/transmission-daemon".
 From:
 ~~~
