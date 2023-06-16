@@ -90,7 +90,8 @@ password
 ~~~
 And then create a script that starts openvpn upon boot by creating "/etc/local.d/openvpn.start" and add the following:
 ~~~
-openvpn --config /etc/openvpn/nordvpn.ovpn --auth-user-pass /etc/openvpn/creds
+echo openvpn --config /etc/openvpn/nordvpn.ovpn --auth-user-pass /etc/openvpn/creds > /etc/local.d/openvpn.start
+chmod +x /etc/local.d/openvpn.start
 ~~~
 Remember to enable execution on all local scripts.
 ```
