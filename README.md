@@ -14,13 +14,14 @@ mkdir /torrents
 
 Add the following to "/etc/fstab". Customize for your environment.
 ```
-//192.168.178.30/torrents    /torrents    cifs    uid=0,gid=0,user=myusername,password=*****,_netdev 0 0
+echo //192.168.178.30/torrents    /torrents    cifs    uid=0,gid=0,user=myusername,password=*****,_netdev 0 0 >> /etc/fstab
 ```
 In my case enabling netmount didn't ensure that the share was automounted, so I created a custom starter script.
 
 Create "/etc/local.d/mounter.start" with the following content:
 ```
-mount -a
+echo mount -a > /etc/local.d/mounter.start
+chmod +x /etc/local.d/mounter.start
 ```
 And add the service:
 ~~~
@@ -35,11 +36,11 @@ Install the firewall.
 ~~~
 apk add ip6tables ufw
 ~~~
-Add the following to "/etc/sysctl.conf" to disable ipv6.
+Add the following to "/etc/sysctl.conf" to disable ipv6. Run:
 ~~~
-net.ipv6.conf.all.disable_ipv6=1
-net.ipv6.conf.default.disable_ipv6=1
-net.ipv6.conf.lo.disable_ipv6=1
+echo net.ipv6.conf.all.disable_ipv6=1 >> /etc/sysctl.conf
+echo net.ipv6.conf.default.disable_ipv6=1 >> /etc/sysctl.conf
+echo net.ipv6.conf.lo.disable_ipv6=1 >> /etc/sysctl.conf
 ~~~
 Update sysctl
 ~~~
