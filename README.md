@@ -48,9 +48,9 @@ sysctl -p
 ~~~
 You can now check if "/proc/sys/net/ipv6/conf/all/disable_ipv6" is set to 1.
 
-Also disable ipv6 in ufw by changing "IPV6=yes" in "/etc/default/ufw" to:
+Also disable ipv6 in ufw by changing "IPV6=yes" in "/etc/default/ufw". Run:
 ~~~
-IPV6=no
+sed -i 's/IPV6=yes/IPV6=no/g' /etc/default/ufw
 ~~~
 And now temporarily disable ufw:
 ~~~
