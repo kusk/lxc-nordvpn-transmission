@@ -91,6 +91,10 @@ And then create a script that starts openvpn upon boot by creating "/etc/local.d
 ~~~
 openvpn --config /etc/openvpn/nordvpn.ovpn --auth-user-pass /etc/openvpn/creds
 ~~~
+Remember to enable execution on all local scripts.
+```
+chmod +x /etc/local.d/*
+```
 
 ## Transmission
 Install Transmission-daemon as bittorrent client:
